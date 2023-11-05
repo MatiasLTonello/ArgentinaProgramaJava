@@ -8,7 +8,7 @@ public class Materia {
     private List<Materia> correlativasNecesarias;
 
     public Materia(String nombre) {
-        this.nombre = nombre;
+        this.setNombre(nombre);
         this.correlativasNecesarias = new ArrayList<>();
     }
 
@@ -19,4 +19,20 @@ public class Materia {
     public List<Materia> getCorrelativasNecesarias() {
         return correlativasNecesarias;
     }
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Integer getIdMateria() {
+		return idMateria;
+	}
+
+	public void setIdMateria(Integer idMateria) {
+		this.idMateria = idMateria;
+	}
 }
